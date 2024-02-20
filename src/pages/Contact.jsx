@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -16,6 +17,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+
+    emailjs.sendForm('service_xelm5w2', 'template_o48ybhm');
   };
   return (
     <section className="relative flex lg:flex-row flex-col max-container">
