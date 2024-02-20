@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [isLoading, setIsLoading] = useState(false); // Used for rendering the status of the submit button
 
   const handleChange = (e) => {};
 
@@ -21,6 +22,7 @@ const Contact = () => {
               name="name"
               className="input"
               placeholder="Name"
+              required
               value={form.name}
               onChange={handleChange}
               onFocus={handleFocus}
@@ -34,6 +36,7 @@ const Contact = () => {
               name="email"
               className="input"
               placeholder="validEmail@domain"
+              required
               value={form.email}
               onChange={handleChange}
               onFocus={handleFocus}
@@ -53,8 +56,8 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <button type="submit" className="btn">
-            Submit
+          <button type="submit" className="btn" onFoucs={handleFocus} onBlur={handleBlur}>
+            {isLoading ? 'Sending...' : 'Send Message'}
           </button>
         </form>
       </div>
