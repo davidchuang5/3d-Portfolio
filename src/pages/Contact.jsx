@@ -3,14 +3,14 @@ import { Canvas } from '@react-three/fiber';
 import { Suspense, useRef, useState } from 'react';
 
 import { Fox } from '../models/Fox';
-//import useAlert from '../hooks/useAlert';
+import useAlert from '../hooks/useAlert';
 import Alert from '../components/Alert';
 import Loader from '../components/Loader';
 
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({ name: '', email: '', message: '' });
-  //const { alert, showAlert, hideAlert } = useAlert();
+  const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState('idle');
 
@@ -42,14 +42,14 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          // showAlert({
-          //   show: true,
-          //   text: 'Thank you for your message 😃',
-          //   type: 'success',
-          // });
+          showAlert({
+            show: true,
+            text: 'Thank you for your message 😃',
+            type: 'success',
+          });
 
           setTimeout(() => {
-            //hideAlert(false);
+            hideAlert(false);
             setCurrentAnimation('idle');
             setForm({
               name: '',
@@ -63,11 +63,11 @@ const Contact = () => {
           console.error(error);
           setCurrentAnimation('idle');
 
-          // showAlert({
-          //   show: true,
-          //   text: "I didn't receive your message 😢",
-          //   type: 'danger',
-          // });
+          showAlert({
+            show: true,
+            text: "I didn't receive your message 😢",
+            type: 'danger',
+          });
         }
       );
   };
@@ -86,7 +86,7 @@ const Contact = () => {
               type="text"
               name="name"
               className="input"
-              placeholder="John"
+              placeholder="John Doe"
               required
               value={form.name}
               onChange={handleChange}
