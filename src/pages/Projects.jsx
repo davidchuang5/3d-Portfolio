@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { projects } from '../constants';
 import { arrow } from '../assets/icons';
+import CTA from '../components/CTA';
 
 const Projects = () => {
   return (
@@ -31,9 +32,24 @@ const Projects = () => {
               <h4 className="text-2xl font-poppins font-semibold">{project.name}</h4>
               <p className="mt-2 text-slate-500">{project.description}</p>
             </div>
+            <div className="mt-5 flex items-center gap-2 font-poppins">
+              <img src={arrow} alt="arrow" className="w-4 h-4 object-contain"></img>
+              <Link
+                to={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-blue-600"
+              >
+                Click here to see!
+              </Link>
+            </div>
           </div>
         ))}
       </div>
+
+      <hr className="border-slate-200" />
+
+      <CTA />
     </section>
   );
 };

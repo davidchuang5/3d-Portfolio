@@ -32,6 +32,8 @@ import graphql from './graphql.svg';
 import webcomponents from './webcomponents.svg';
 import docker from './docker.svg';
 import DockerPulse from './DockerPulse.png';
+import ramen from './ramen.png';
+import Tabloid from './Tabloid.png';
 
 export {
   css,
@@ -68,4 +70,6 @@ export {
   soundoff,
   webcomponents,
   DockerPulse,
+  ramen,
+  Tabloid,
 };

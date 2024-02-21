@@ -30,6 +30,8 @@ import {
   postgresql,
   webcomponents,
   DockerPulse,
+  ramen,
+  Tabloid,
 } from '../assets/icons';
 
 export const skills = [
@@ -224,23 +226,23 @@ export const projects = [
     name: 'ContainerWatch',
     description:
       'Developed a Docker Desktop Extension with small team of 4. Monitoring tools for Docker: metrics visualization (up to 3 days), log aggregation and filtering, and alerts.',
-    link: 'https://github.com/davidchuang5/ContainerWatch',
+    link: 'https://hub.docker.com/extensions/containerwatch/containerwatch',
   },
   {
-    iconUrl: threads,
+    iconUrl: ramen,
     theme: 'btn-back-green',
-    name: 'Full Stack Threads Clone',
+    name: 'Leftovers',
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: 'https://github.com/adrianhajdin/threads',
+      "Overwhelmed with leftover ingredients? Don't know what to cook? With Leftovers, simply type the ingredients you have in your fridge, and get real recipes you can cook right away. Leftovers also allows you to search for recipes you wish to make, without having to type the ingredients out. It's one simple search bar with endless possibilites. Enjoy!",
+    link: 'https://github.com/davidchuang5/LeftOvers',
   },
   {
-    iconUrl: car,
+    iconUrl: Tabloid,
     theme: 'btn-back-blue',
-    name: 'Car Finding App',
+    name: 'Tabloid',
     description:
-      'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-    link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+      'A lightweight, google chrome extension offering note taking for all your chrome tabs. Notes are tied to the URL of the active tab and saved directly to the browser. Tabloid offers data persistence across unlimited tabs and unlimited windows- keeping the web and your notes all in one place.',
+    link: 'https://github.com/davidchuang5/Tabloid',
   },
   {
     iconUrl: snapgram,
