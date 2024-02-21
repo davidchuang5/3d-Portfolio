@@ -34,6 +34,7 @@ import docker from './docker.svg';
 import DockerPulse from './DockerPulse.png';
 import ramen from './ramen.png';
 import Tabloid from './Tabloid.png';
+import play from './play.png';
 
 export {
   css,
@@ -72,4 +73,5 @@ export {
   DockerPulse,
   ramen,
   Tabloid,
+  play,
 };

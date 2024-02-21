@@ -32,6 +32,7 @@ import {
   DockerPulse,
   ramen,
   Tabloid,
+  play,
 } from '../assets/icons';
 
 export const skills = [
@@ -222,7 +223,7 @@ export const socialLinks = [
 export const projects = [
   {
     iconUrl: DockerPulse,
-    theme: 'btn-back-red',
+    theme: 'btn-back-yellow',
     name: 'ContainerWatch',
     description:
       'Developed a Docker Desktop Extension with small team of 4. Monitoring tools for Docker: metrics visualization (up to 3 days), log aggregation and filtering, and alerts.',
@@ -245,27 +246,10 @@ export const projects = [
     link: 'https://github.com/davidchuang5/Tabloid',
   },
   {
-    iconUrl: snapgram,
-    theme: 'btn-back-pink',
-    name: 'Full Stack Instagram Clone',
-    description:
-      'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-    link: 'https://github.com/adrianhajdin/social_media_app',
-  },
-  {
-    iconUrl: estate,
-    theme: 'btn-back-black',
-    name: 'Real-Estate Application',
-    description:
-      'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-    link: 'https://github.com/adrianhajdin/projects_realestate',
-  },
-  {
-    iconUrl: summiz,
-    theme: 'btn-back-yellow',
-    name: 'AI Summarizer Application',
-    description:
-      'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-    link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+    iconUrl: play,
+    theme: 'btn-back-red',
+    name: 'UX Best Practices Public Talk',
+    description: 'My public talk on UX best practices for developers.',
+    link: 'https://drive.google.com/file/d/1dqB0IJHlFVO__yHobA9wUsBNGZWrbVXk/view?usp=sharing',
   },
 ];
