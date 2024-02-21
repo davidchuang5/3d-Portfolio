@@ -1,4 +1,7 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
+
+import { projects } from '../constants';
+import { arrow } from '../assets/icons';
 
 const Projects = () => {
   return (
@@ -13,6 +16,19 @@ const Projects = () => {
           something you like, feel free to check out the codebase and use it as inspiration for your
           own projects! Your collaboration is highly valued.
         </p>
+      </div>
+
+      <div className="flex flex-wrap my-20 gap-16">
+        {projects.map((project) => (
+          <div className="lg:w-[400px] w-full" key={project.name}>
+            <div className="block-container w-12 h-12">
+              <div className={`btn-back rounded-xl ${project.theme}`} />
+              <div className="btn-front rounded-xl flex justify-center items-center">
+                <img src={project.iconUrl} alt="threads" className="w-1/2 h-1/2 object-contain" />
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -29,6 +29,7 @@ import {
   typescript,
   postgresql,
   webcomponents,
+  DockerPulse,
 } from '../assets/icons';
 
 export const skills = [
@@ -218,12 +219,12 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: pricewise,
+    iconUrl: DockerPulse,
     theme: 'btn-back-red',
-    name: 'Amazon Price Tracker',
+    name: 'ContainerWatch',
     description:
-      'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-    link: 'https://github.com/adrianhajdin/pricewise',
+      'Developed a Docker Desktop Extension with small team of 4. Monitoring tools for Docker: metrics visualization (up to 3 days), log aggregation and filtering, and alerts.',
+    link: 'https://github.com/davidchuang5/ContainerWatch',
   },
   {
     iconUrl: threads,

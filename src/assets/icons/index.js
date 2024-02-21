@@ -31,6 +31,7 @@ import flask from './flask.svg';
 import graphql from './graphql.svg';
 import webcomponents from './webcomponents.svg';
 import docker from './docker.svg';
+import DockerPulse from './DockerPulse.png';
 
 export {
   css,
@@ -66,4 +67,5 @@ export {
   soundon,
   soundoff,
   webcomponents,
+  DockerPulse,
 };
