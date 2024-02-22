@@ -1,5 +1,6 @@
 import React from 'react';
 import { experiences, skills } from '../constants';
+import CTA from '../components/CTA';
 
 const About = () => {
   return (
@@ -10,8 +11,12 @@ const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          A Software Engineer based in Dallas Texas who specializes in Frontend and Fullstack
-          development.
+          As a software engineer, I prioritize the creation of simple and scalable solutions. I love
+          keeping up to date with new technologies and seeing what they have to offer. Proficient in
+          the MERN stack and adept at exploring various frontend frameworks, I enjoy blending my
+          interest in photography into my application designs, crafting sleek and minimalist
+          layouts. When I'm not coding, I enjoy playing volleyball, surfing, and anything involving
+          the ocean!
         </p>
       </div>
 
@@ -29,6 +34,9 @@ const About = () => {
           ))}
         </div>
       </div>
+      <hr className="border-slate-200" />
+
+      <CTA />
     </section>
   );
 };
