@@ -35,11 +35,18 @@ import DockerPulse from './DockerPulse.png';
 import ramen from './ramen.png';
 import Tabloid from './Tabloid.png';
 import play from './play.png';
+import home from './home.svg';
+import book from './book.svg';
+import folder from './folder.svg';
+import email from './email.svg';
 
 export {
   css,
   express,
+  book,
   docker,
+  folder,
+  email,
   git,
   github,
   graphql,
@@ -74,4 +81,5 @@ export {
   ramen,
   Tabloid,
   play,
+  home,
 };
