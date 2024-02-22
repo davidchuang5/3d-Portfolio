@@ -1,36 +1,46 @@
 import { NavLink } from 'react-router-dom';
 
-import { logo } from '../assets/images';
+import { home, book, folder, email } from '../assets/icons';
 
 const Navbar = () => {
+  console.log(location.pathname);
   return (
     <header className="header">
-      <NavLink
-        to="/"
-        className="w-20 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
-      >
-        {/* <img src={logo} alt="logo" className="w-18 h-18 object-contain" /> */}
-        <p className="blue-gradient_text">HOME</p>
-      </NavLink>
-      <nav className="flex text-lg gap-7 font-medium">
-        <NavLink
-          to="/about"
-          className={({ isActive }) => (isActive ? 'text-blue-600' : 'text-black')}
-        >
-          About
+      <nav className="flex items-center text-lg gap-2 font-medium">
+        <img src={home} alt="home" className="w-4 h-4 object-contain" />
+        <NavLink to="/" className={({ isActive }) => (isActive ? 'text-blue-600' : 'text-black')}>
+          Home
         </NavLink>
-        <NavLink
-          to="/projects"
-          className={({ isActive }) => (isActive ? 'text-blue-600' : 'text-black')}
-        >
-          Projects
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) => (isActive ? 'text-blue-600' : 'text-black')}
-        >
-          Contact
-        </NavLink>
+      </nav>
+
+      <nav className="flex items-center text-lg gap-7 font-medium">
+        <div className="flex items-center gap-1">
+          <img src={book} alt="book" className="w-4 h-4 object-contain" />
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? 'text-blue-600' : 'text-black')}
+          >
+            About
+          </NavLink>
+        </div>
+        <div className="flex items-center gap-1">
+          <img src={folder} alt="folder" className="w-4 h-4 object-contain" />
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? 'text-blue-600' : 'text-black')}
+          >
+            Projects
+          </NavLink>
+        </div>
+        <div className="flex items-center gap-1">
+          <img src={email} alt="folder" className="w-4 h-4 object-contain" />
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? 'text-blue-600' : 'text-black')}
+          >
+            Contact
+          </NavLink>
+        </div>
       </nav>
     </header>
   );
