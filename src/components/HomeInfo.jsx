@@ -9,7 +9,7 @@ const HomeInfo = ({ currentStage }) => {
         Hi, I'm
         <span className="font-semibold mx-2 text-white">David</span>
         👋
-        <br />A Software Engineer from Dallas Texas
+        <br />A Software Engineer based in Dallas Texas
       </h1>
     );
 
@@ -17,7 +17,9 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className="info-box">
         <p className="font-medium sm:text-xl text-center">
-          Curious to know more about me? <br /> Read more here!
+          I am a software engineer specializing in frontend and fullstack development, driven by a
+          love for exploring and experimenting with cutting-edge technologies. Curious to know more
+          about me? <br /> Read more here!
         </p>
 
         <Link to="/about" className="neo-brutalism-white neo-btn">
